@@ -1,0 +1,43 @@
+#login-main-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 1.6rem;
+  position: relative;
+}
+#login-form-container{
+  width: 100%;
+  max-width: 450px;
+}
+span{
+  color: var(--primary-green);
+}
+span:hover {
+  cursor: pointer;
+  color: black;
+}
+
+h1 {
+  margin: -4px !important;
+}
+img{
+  margin-left: 150px;
+  transform: scale(0.75);
+}
+
+@media screen and (max-width: 500px) {
+
+  #login-main-container {
+      display: flex;
+      flex-direction: column;
+  }
+
+  img {
+      margin-left: 0px;
+      transform: scale(1);
+  }
+
+  epm-button {
+      display: block;
+      margin: auto;
+  }
+}
